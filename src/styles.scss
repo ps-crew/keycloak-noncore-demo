@@ -1,0 +1,41 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: none;
+  font-size: 48px;
+  color: white;
+  border: double 4px transparent;
+  border-radius: 15px;
+  background-image: linear-gradient(black, black),
+    radial-gradient(circle at top left, #380036, #0cbaba);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  [data-value="name"] {
+    margin-bottom: 16px;
+  }
+
+  [data-value="email"],
+  [data-value="username"] {
+    font-size: 16px;
+    margin-bottom: 8px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .wrapper {
+    padding: 32px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
